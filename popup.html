@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>HSLU Login Einstellungen</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+    body {
+      font-family: 'Inter', sans-serif;
+      width: 300px;
+      padding: 20px;
+      background: #f5f7fa;
+      color: #333;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-weight: 600;
+      font-size: 1.25rem;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    label {
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin-bottom: 5px;
+      color: #34495e;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      padding: 10px;
+      font-size: 1rem;
+      border: 1.5px solid #ccc;
+      border-radius: 6px;
+      transition: border-color 0.3s;
+    }
+
+    input[type="email"]:focus,
+    input[type="password"]:focus {
+      outline: none;
+      border-color: #3498db;
+      box-shadow: 0 0 6px #aad8ff;
+    }
+
+    button {
+      padding: 12px;
+      background-color: #3498db;
+      color: white;
+      font-weight: 600;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+
+    #status {
+      margin-top: 15px;
+      font-weight: 600;
+      color: #27ae60;
+      text-align: center;
+      min-height: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>HSLU Auto-Login</h1>
+  <form id="credentialsForm">
+    <label for="email">SWITCH edu-ID E-Mail</label>
+    <input type="email" id="email" placeholder="andy.arbeit@example.org" required />
+    
+    <label for="password">Passwort</label>
+    <input type="password" id="password" placeholder="••••••••" required />
+    
+    <button type="submit">Speichern</button>
+  </form>
+  <div id="status"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
