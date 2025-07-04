@@ -2,7 +2,8 @@
 
 Eine einfache Chrome Extension, um den Login-Prozess für das HSLU eLearning (ILIAS) zu automatisieren.
 
-![HSLU Auto-Login UI](https://github.com/user-attachments/assets/00b86500-bbca-42aa-8ab3-15cce10b8882)
+![image](https://github.com/user-attachments/assets/26bc0623-3810-4cbb-bb00-e04227d720d8)
+
 
 
 ## Installation
